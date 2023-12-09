@@ -2,10 +2,10 @@ package task.validations;
 
 import actions.WaitUntilElement;
 import org.openqa.selenium.WebDriver;
-import ui.AddRemove;
+import ui.TodoUI;
 
-public class IsDeleteElement {
+public class IsTaskCreated {
     public static boolean visible(WebDriver webDriver){
-        return WaitUntilElement.isVisible(webDriver, AddRemove.remove);
+        return WaitUntilElement.isVisible(webDriver, TodoUI.confirmtask);
     }
 }
